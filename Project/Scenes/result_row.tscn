@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dvg7newpjqa10"]
+
+[node name="Result Row" type="HBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+
+[node name="Algorithm" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Algorithm"
+
+[node name="Elapse Time" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Elapse Time"
+
+[node name="Time Step" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Time Step"
+
+[node name="Length" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Length"
+
+[node name="Traveled" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Traveled"
+
+[node name="Expanded" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Expanded"
+
+[node name="Map" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Map"

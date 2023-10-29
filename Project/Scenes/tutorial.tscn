@@ -1,0 +1,574 @@
+[gd_scene load_steps=126 format=3 uid="uid://dflfvkosrambd"]
+
+[ext_resource type="Texture2D" uid="uid://coeq8f42kdk1l" path="res://Resources/Tutorial/Tutorial_000.png" id="1_dysit"]
+[ext_resource type="Script" path="res://Scripts/Tutorial.gd" id="1_j0u5i"]
+[ext_resource type="Texture2D" uid="uid://tighf4uavedo" path="res://Resources/Tutorial/Tutorial_001.png" id="2_i66pa"]
+[ext_resource type="Texture2D" uid="uid://c03iq7ued6abn" path="res://Resources/Tutorial/Tutorial_002.png" id="3_0mwoh"]
+[ext_resource type="Texture2D" uid="uid://bxgyk3dcf6y51" path="res://Resources/Tutorial/Tutorial_003.png" id="4_5d4ky"]
+[ext_resource type="Texture2D" uid="uid://biobxtdqx8o6r" path="res://Resources/Tutorial/Tutorial_004.png" id="5_odshk"]
+[ext_resource type="Texture2D" uid="uid://dsghkvd4a3du3" path="res://Resources/Tutorial/Tutorial_005.png" id="6_dpmdw"]
+[ext_resource type="Texture2D" uid="uid://bvssoerhtlkat" path="res://Resources/Tutorial/Tutorial_006.png" id="7_xc6ao"]
+[ext_resource type="Texture2D" uid="uid://cx0xrpvl6i7bk" path="res://Resources/Tutorial/Tutorial_007.png" id="8_1vyrl"]
+[ext_resource type="Texture2D" uid="uid://273tk6i35rwi" path="res://Resources/Tutorial/Tutorial_008.png" id="9_wpdcy"]
+[ext_resource type="Texture2D" uid="uid://b86j6a34cgpu5" path="res://Resources/Tutorial/Tutorial_009.png" id="10_xjbw3"]
+[ext_resource type="Texture2D" uid="uid://ck68mrmumdyrl" path="res://Resources/Tutorial/Tutorial_010.png" id="11_vm0gy"]
+[ext_resource type="Texture2D" uid="uid://bcxicf1nk4kta" path="res://Resources/Tutorial/Tutorial_011.png" id="12_adlbb"]
+[ext_resource type="Texture2D" uid="uid://c0futo6mutkkl" path="res://Resources/Tutorial/Tutorial_012.png" id="13_3378v"]
+[ext_resource type="Texture2D" uid="uid://cel2e8tv1sf6x" path="res://Resources/Tutorial/Tutorial_013.png" id="14_g7tjv"]
+[ext_resource type="Texture2D" uid="uid://dvk4eopwkr3ab" path="res://Resources/Tutorial/Tutorial_014.png" id="15_iyjns"]
+[ext_resource type="Texture2D" uid="uid://y3tv5xkrbxo1" path="res://Resources/Tutorial/Tutorial_015.png" id="16_t6n0v"]
+[ext_resource type="Texture2D" uid="uid://vl425raiul45" path="res://Resources/Tutorial/Tutorial_016.png" id="17_wiqur"]
+[ext_resource type="Texture2D" uid="uid://bffwjixp0hp5p" path="res://Resources/Tutorial/Tutorial_017.png" id="18_4108f"]
+[ext_resource type="Texture2D" uid="uid://cmelc7buxa3xe" path="res://Resources/Tutorial/Tutorial_018.png" id="19_i6mex"]
+[ext_resource type="Texture2D" uid="uid://djkur8aj3bkme" path="res://Resources/Tutorial/Tutorial_019.png" id="20_o3gkv"]
+[ext_resource type="Texture2D" uid="uid://mtvvuae3cjci" path="res://Resources/Tutorial/Tutorial_020.png" id="21_at4je"]
+[ext_resource type="Texture2D" uid="uid://dk2tpoakuefof" path="res://Resources/Tutorial/Tutorial_021.png" id="22_d6mna"]
+[ext_resource type="Texture2D" uid="uid://dleoa5mdw567a" path="res://Resources/Tutorial/Tutorial_022.png" id="23_ldry1"]
+[ext_resource type="Texture2D" uid="uid://c2sw3x33jte8p" path="res://Resources/Tutorial/Tutorial_023.png" id="24_32iuu"]
+[ext_resource type="Texture2D" uid="uid://br1v577ckdisi" path="res://Resources/Tutorial/Tutorial_024.png" id="25_2xkvy"]
+[ext_resource type="Texture2D" uid="uid://dnlo6oa3ymenl" path="res://Resources/Tutorial/Tutorial_025.png" id="26_06xta"]
+[ext_resource type="Texture2D" uid="uid://bo4idh2klylqp" path="res://Resources/Tutorial/Tutorial_026.png" id="27_sso0j"]
+[ext_resource type="Texture2D" uid="uid://bmh3mav7tcsbc" path="res://Resources/Tutorial/Tutorial_027.png" id="28_2xym1"]
+[ext_resource type="Texture2D" uid="uid://y6l6yqgxu2ix" path="res://Resources/Tutorial/Tutorial_028.png" id="29_etmxg"]
+[ext_resource type="Texture2D" uid="uid://b1mq5l1odt3yk" path="res://Resources/Tutorial/Tutorial_029.png" id="30_w2mxv"]
+[ext_resource type="Texture2D" uid="uid://bwynt1selrogb" path="res://Resources/Tutorial/Tutorial_030.png" id="31_jbcbh"]
+[ext_resource type="Texture2D" uid="uid://be7b4155li76l" path="res://Resources/Tutorial/Tutorial_031.png" id="32_ffkab"]
+[ext_resource type="Texture2D" uid="uid://drmhf8pimgl3x" path="res://Resources/Tutorial/Tutorial_032.png" id="33_bhiua"]
+[ext_resource type="Texture2D" uid="uid://dfg1kywqc4fc5" path="res://Resources/Tutorial/Tutorial_033.png" id="34_abae8"]
+[ext_resource type="Texture2D" uid="uid://doyirew80x84v" path="res://Resources/Tutorial/Tutorial_034.png" id="35_kra5c"]
+[ext_resource type="Texture2D" uid="uid://bw1gtq4gbpaw0" path="res://Resources/Tutorial/Tutorial_035.png" id="36_wq360"]
+[ext_resource type="Texture2D" uid="uid://m72mtdscjkf6" path="res://Resources/Tutorial/Tutorial_036.png" id="37_decci"]
+[ext_resource type="Texture2D" uid="uid://cxnybjd4vkubk" path="res://Resources/Tutorial/Tutorial_037.png" id="38_j4266"]
+[ext_resource type="Texture2D" uid="uid://dsmn33ix3mej4" path="res://Resources/Tutorial/Tutorial_038.png" id="39_cjtf1"]
+[ext_resource type="Texture2D" uid="uid://cxtbl2kppkv5b" path="res://Resources/Tutorial/Tutorial_039.png" id="40_prgem"]
+[ext_resource type="Texture2D" uid="uid://dy02eb3g2sh4b" path="res://Resources/Tutorial/Tutorial_040.png" id="41_khan7"]
+[ext_resource type="Texture2D" uid="uid://bhoh03hmtev4" path="res://Resources/Tutorial/Tutorial_041.png" id="42_qlaux"]
+[ext_resource type="Texture2D" uid="uid://dxcmxb8tas2hh" path="res://Resources/Tutorial/Tutorial_042.png" id="43_bo7ne"]
+[ext_resource type="Texture2D" uid="uid://c58a8gfkd5qwo" path="res://Resources/Tutorial/Tutorial_043.png" id="44_jn7nv"]
+[ext_resource type="Texture2D" uid="uid://bc7ws2nn67r6v" path="res://Resources/Tutorial/Tutorial_044.png" id="45_jo4vs"]
+[ext_resource type="Texture2D" uid="uid://5e473oeyfxtl" path="res://Resources/Tutorial/Tutorial_045.png" id="46_dojnn"]
+[ext_resource type="Texture2D" uid="uid://3jyu5plmxshh" path="res://Resources/Tutorial/Tutorial_046.png" id="47_t0hk1"]
+[ext_resource type="Texture2D" uid="uid://b8rcvi0nlvo26" path="res://Resources/Tutorial/Tutorial_047.png" id="48_5a2us"]
+[ext_resource type="Texture2D" uid="uid://byddxu5q2yvny" path="res://Resources/Tutorial/Tutorial_048.png" id="49_32wsx"]
+[ext_resource type="Texture2D" uid="uid://bnodd13ajhd1b" path="res://Resources/Tutorial/Tutorial_049.png" id="50_gs43o"]
+[ext_resource type="Texture2D" uid="uid://wwsvs2apmfx4" path="res://Resources/Tutorial/Tutorial_050.png" id="51_7khqv"]
+[ext_resource type="Texture2D" uid="uid://d0cxl8kiwgp14" path="res://Resources/Tutorial/Tutorial_051.png" id="52_51mcj"]
+[ext_resource type="Texture2D" uid="uid://csg7jrwsj1ynq" path="res://Resources/Tutorial/Tutorial_052.png" id="53_tgr8t"]
+[ext_resource type="Texture2D" uid="uid://dtef2r150f5mm" path="res://Resources/Tutorial/Tutorial_053.png" id="54_4h3vm"]
+[ext_resource type="Texture2D" uid="uid://dwk3tq1vb4f0" path="res://Resources/Tutorial/Tutorial_054.png" id="55_38uie"]
+[ext_resource type="Texture2D" uid="uid://bikup3geynt1t" path="res://Resources/Tutorial/Tutorial_055.png" id="56_kqch4"]
+[ext_resource type="Texture2D" uid="uid://cw8yg2p3daw1d" path="res://Resources/Tutorial/Tutorial_056.png" id="57_t3x76"]
+[ext_resource type="Texture2D" uid="uid://bgmt8csq2wgwl" path="res://Resources/Tutorial/Tutorial_057.png" id="58_2k4t6"]
+[ext_resource type="Texture2D" uid="uid://c8hungbhx71f7" path="res://Resources/Tutorial/Tutorial_058.png" id="59_00gxv"]
+[ext_resource type="Texture2D" uid="uid://bdlphgv6hoo48" path="res://Resources/Tutorial/Tutorial_059.png" id="60_an6wd"]
+[ext_resource type="Texture2D" uid="uid://cdd3sxndluqxn" path="res://Resources/Tutorial/Tutorial_060.png" id="61_47hun"]
+[ext_resource type="Texture2D" uid="uid://d3a8ix7vtra6a" path="res://Resources/Tutorial/Tutorial_061.png" id="62_6fonw"]
+[ext_resource type="Texture2D" uid="uid://bgmq0dl3wntns" path="res://Resources/Tutorial/Tutorial_062.png" id="63_1xot7"]
+[ext_resource type="Texture2D" uid="uid://b80sxqw5os340" path="res://Resources/Tutorial/Tutorial_063.png" id="64_o6yph"]
+[ext_resource type="Texture2D" uid="uid://d0e2a004sdvvj" path="res://Resources/Tutorial/Tutorial_064.png" id="65_a13ta"]
+[ext_resource type="Texture2D" uid="uid://rw84rm06fq4v" path="res://Resources/Tutorial/Tutorial_065.png" id="66_ewk0n"]
+[ext_resource type="Texture2D" uid="uid://uardfwoc4l5g" path="res://Resources/Tutorial/Tutorial_066.png" id="67_owwyf"]
+[ext_resource type="Texture2D" uid="uid://du1ogx6nddiv8" path="res://Resources/Tutorial/Tutorial_067.png" id="68_qa2fx"]
+[ext_resource type="Texture2D" uid="uid://bbq6k3rc267jr" path="res://Resources/Tutorial/Tutorial_068.png" id="69_hjcto"]
+[ext_resource type="Texture2D" uid="uid://chh572vjbru3f" path="res://Resources/Tutorial/Tutorial_069.png" id="70_xmabr"]
+[ext_resource type="Texture2D" uid="uid://dawjuqgsu2bsu" path="res://Resources/Tutorial/Tutorial_070.png" id="71_qmgvl"]
+[ext_resource type="Texture2D" uid="uid://bj51x20py653w" path="res://Resources/Tutorial/Tutorial_071.png" id="72_ufk8l"]
+[ext_resource type="Texture2D" uid="uid://ccqkfpld5dpww" path="res://Resources/Tutorial/Tutorial_072.png" id="73_sjb7a"]
+[ext_resource type="Texture2D" uid="uid://d08k37h421fxb" path="res://Resources/Tutorial/Tutorial_073.png" id="74_kc2bh"]
+[ext_resource type="Texture2D" uid="uid://dx350rtgtmbte" path="res://Resources/Tutorial/Tutorial_074.png" id="75_fh0vv"]
+[ext_resource type="Texture2D" uid="uid://cnnbmhcycnwnn" path="res://Resources/Tutorial/Tutorial_075.png" id="76_7xvs1"]
+[ext_resource type="Texture2D" uid="uid://vtc4tq2rw6k2" path="res://Resources/Tutorial/Tutorial_076.png" id="77_coyvw"]
+[ext_resource type="Texture2D" uid="uid://bcjmpwgs4v57p" path="res://Resources/Tutorial/Tutorial_077.png" id="78_0so6w"]
+[ext_resource type="Texture2D" uid="uid://do6ylwst61x2r" path="res://Resources/Tutorial/Tutorial_078.png" id="79_xr7ph"]
+[ext_resource type="Texture2D" uid="uid://60kvaof1jmw1" path="res://Resources/Tutorial/Tutorial_079.png" id="80_5xnem"]
+[ext_resource type="Texture2D" uid="uid://cjqb6il04lo2i" path="res://Resources/Tutorial/Tutorial_080.png" id="81_wccal"]
+[ext_resource type="Texture2D" uid="uid://yrf5npqi0u2b" path="res://Resources/Tutorial/Tutorial_081.png" id="82_eipjw"]
+[ext_resource type="Texture2D" uid="uid://b6rwcc5jdem4i" path="res://Resources/Tutorial/Tutorial_082.png" id="83_gmgrs"]
+[ext_resource type="Texture2D" uid="uid://c0r4xkq62agtx" path="res://Resources/Tutorial/Tutorial_083.png" id="84_5stf5"]
+[ext_resource type="Texture2D" uid="uid://dvii3hbupg0b7" path="res://Resources/Tutorial/Tutorial_084.png" id="85_40xlw"]
+[ext_resource type="Texture2D" uid="uid://fp30viwkk26" path="res://Resources/Tutorial/Tutorial_085.png" id="86_fvbxm"]
+[ext_resource type="Texture2D" uid="uid://c5xyshpgxqu7i" path="res://Resources/Tutorial/Tutorial_086.png" id="87_a5fqq"]
+[ext_resource type="Texture2D" uid="uid://dvt26wc3pdqot" path="res://Resources/Tutorial/Tutorial_087.png" id="88_hblnc"]
+[ext_resource type="Texture2D" uid="uid://beghbhgf03rlu" path="res://Resources/Tutorial/Tutorial_088.png" id="89_qeh5e"]
+[ext_resource type="Texture2D" uid="uid://c3kcnpk0fr2ro" path="res://Resources/Tutorial/Tutorial_089.png" id="90_o7elb"]
+[ext_resource type="Texture2D" uid="uid://c8gd8mkjf1wrh" path="res://Resources/Tutorial/Tutorial_090.png" id="91_4knco"]
+[ext_resource type="Texture2D" uid="uid://cmqhervws5hxo" path="res://Resources/Tutorial/Tutorial_091.png" id="92_270ar"]
+[ext_resource type="Texture2D" uid="uid://dcq7arjrds4ly" path="res://Resources/Tutorial/Tutorial_092.png" id="93_5mr1s"]
+[ext_resource type="Texture2D" uid="uid://cuthutigutexc" path="res://Resources/Tutorial/Tutorial_093.png" id="94_aqdn1"]
+[ext_resource type="Texture2D" uid="uid://c813igmln70a6" path="res://Resources/Tutorial/Tutorial_094.png" id="95_4xevc"]
+[ext_resource type="Texture2D" uid="uid://djvwh6a3raggm" path="res://Resources/Tutorial/Tutorial_095.png" id="96_l5wp7"]
+[ext_resource type="Texture2D" uid="uid://dqapgrfp06j4f" path="res://Resources/Tutorial/Tutorial_096.png" id="97_qqt5j"]
+[ext_resource type="Texture2D" uid="uid://b6i5cahf4iklr" path="res://Resources/Tutorial/Tutorial_097.png" id="98_8me45"]
+[ext_resource type="Texture2D" uid="uid://bpddry5f5jk25" path="res://Resources/Tutorial/Tutorial_098.png" id="99_ptox2"]
+[ext_resource type="Texture2D" uid="uid://c0a8yost17rms" path="res://Resources/Tutorial/Tutorial_099.png" id="100_g1vhb"]
+[ext_resource type="Texture2D" uid="uid://cc27qy8vtr6qf" path="res://Resources/Tutorial/Tutorial_100.png" id="101_sdyre"]
+[ext_resource type="Texture2D" uid="uid://bqtyhh7mr0e5c" path="res://Resources/Tutorial/Tutorial_101.png" id="102_1k3jr"]
+[ext_resource type="Texture2D" uid="uid://cmrf7woavba27" path="res://Resources/Tutorial/Tutorial_102.png" id="103_ymg6o"]
+[ext_resource type="Texture2D" uid="uid://c0nk1dg7q6051" path="res://Resources/Tutorial/Tutorial_103.png" id="104_ylgg7"]
+[ext_resource type="Texture2D" uid="uid://mxt3hwdckkhk" path="res://Resources/Tutorial/Tutorial_104.png" id="105_wmkp2"]
+[ext_resource type="Texture2D" uid="uid://fp7sbynyg020" path="res://Resources/Tutorial/Tutorial_105.png" id="106_wgeil"]
+[ext_resource type="Texture2D" uid="uid://utlbr3vgkeq8" path="res://Resources/Tutorial/Tutorial_106.png" id="107_ob1d5"]
+[ext_resource type="Texture2D" uid="uid://006pocw56p7r" path="res://Resources/Tutorial/Tutorial_107.png" id="108_pav32"]
+[ext_resource type="Texture2D" uid="uid://ltaucb1jfgxu" path="res://Resources/Tutorial/Tutorial_108.png" id="109_ibpox"]
+[ext_resource type="Texture2D" uid="uid://h34lm28v6ubp" path="res://Resources/Tutorial/Tutorial_109.png" id="110_lne0w"]
+[ext_resource type="Texture2D" uid="uid://cmua8duxbcxr0" path="res://Resources/Tutorial/Tutorial_110.png" id="111_og8l8"]
+[ext_resource type="Texture2D" uid="uid://cwmeav1ynuvxb" path="res://Resources/Tutorial/Tutorial_111.png" id="112_dcgqm"]
+[ext_resource type="Texture2D" uid="uid://mxg0jew8x0sj" path="res://Resources/Tutorial/Tutorial_112.png" id="113_20ivo"]
+[ext_resource type="Texture2D" uid="uid://3pdggnmwlmet" path="res://Resources/Tutorial/Tutorial_113.png" id="114_miibj"]
+[ext_resource type="Texture2D" uid="uid://cwna677gxcs3h" path="res://Resources/Tutorial/Tutorial_114.png" id="115_43io1"]
+[ext_resource type="Texture2D" uid="uid://bmb8wp3w3a8hy" path="res://Resources/Tutorial/Tutorial_115.png" id="116_2f0ij"]
+[ext_resource type="Texture2D" uid="uid://bvppvpny4b8nk" path="res://Resources/Tutorial/Tutorial_116.png" id="117_ay3yb"]
+[ext_resource type="Texture2D" uid="uid://6x5f703hk3pl" path="res://Resources/Tutorial/Tutorial_117.png" id="118_pm4my"]
+[ext_resource type="Texture2D" uid="uid://csl627l217yme" path="res://Resources/Tutorial/Tutorial_118.png" id="119_x1d4p"]
+[ext_resource type="Texture2D" uid="uid://dxcv6nxfywue" path="res://Resources/Tutorial/Tutorial_119.png" id="120_5q71x"]
+[ext_resource type="Texture2D" uid="uid://d15l57h32875i" path="res://Resources/Tutorial/Tutorial_120.png" id="121_6n8yf"]
+[ext_resource type="Texture2D" uid="uid://dgwbyl8qtjl8" path="res://Resources/Tutorial/Tutorial_121.png" id="122_cdifm"]
+[ext_resource type="Script" path="res://Scripts/BlinkingButton.gd" id="124_bqhlw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dlv81"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dysit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_i66pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0mwoh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5d4ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_odshk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dpmdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xc6ao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1vyrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wpdcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xjbw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vm0gy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_adlbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3378v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7tjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_iyjns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_t6n0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wiqur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_4108f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_i6mex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_o3gkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_at4je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_d6mna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ldry1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_32iuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_2xkvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_06xta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sso0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2xym1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_etmxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_w2mxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_jbcbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ffkab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_bhiua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_abae8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_kra5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_wq360")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_decci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_j4266")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_cjtf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_prgem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_khan7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_qlaux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_bo7ne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jn7nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_jo4vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_dojnn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_t0hk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_5a2us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_32wsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_gs43o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_7khqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_51mcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_tgr8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_4h3vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_38uie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_kqch4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_t3x76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_2k4t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_00gxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_an6wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_47hun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_6fonw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_1xot7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_o6yph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_a13ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ewk0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_owwyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_qa2fx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_hjcto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_xmabr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_qmgvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ufk8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_sjb7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_kc2bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_fh0vv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_7xvs1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_coyvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_0so6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_xr7ph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_5xnem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_wccal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_eipjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_gmgrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_5stf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_40xlw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_fvbxm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_a5fqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_hblnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qeh5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_o7elb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_4knco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_270ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_5mr1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_aqdn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_4xevc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_l5wp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_qqt5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_8me45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_ptox2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_g1vhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_sdyre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_1k3jr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_ymg6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_ylgg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_wmkp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_wgeil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_ob1d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_pav32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_ibpox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_lne0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_og8l8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_dcgqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_20ivo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_miibj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_43io1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_2f0ij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_ay3yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_pm4my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_x1d4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_5q71x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_6n8yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_cdifm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Tutorial" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j0u5i")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CenterContainer"]
+position = Vector2(20, 20)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_dlv81")
+autoplay = "default"
+frame_progress = 0.731357
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -80.0
+offset_right = -32.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+script = ExtResource("124_bqhlw")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -210.5
+offset_top = -91.0
+offset_right = 210.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 48
+text = "THIS IS TUTORIAL VIDEO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

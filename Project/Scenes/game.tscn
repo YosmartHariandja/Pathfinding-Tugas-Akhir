@@ -1,0 +1,355 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwu23voum3b1x"]
+
+[ext_resource type="PackedScene" uid="uid://degrgpmtyx7ty" path="res://Scenes/main.tscn" id="1_m7gql"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_mi7v3"]
+[ext_resource type="Texture2D" uid="uid://cejgusx1n8eor" path="res://Assets/hexagon-64.png" id="3_5jm1u"]
+[ext_resource type="Texture2D" uid="uid://c4rqlaoyfe2g8" path="res://Assets/icons8-arrow-50.png" id="4_ewhv5"]
+[ext_resource type="Script" path="res://Scripts/BlinkingButton.gd" id="5_doavq"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_mi7v3")
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "Result!"
+max_size = Vector2i(650, 100)
+
+[node name="GridContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="GridContainer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 473)
+render_target_update_mode = 4
+
+[node name="Main" parent="GridContainer/SubViewportContainer/SubViewport" instance=ExtResource("1_m7gql")]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="GridContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 5
+selected = 0
+popup/item_0/text = "BFS"
+popup/item_0/id = 0
+popup/item_1/text = "DFS"
+popup/item_1/id = 1
+popup/item_2/text = "GreedyBFS"
+popup/item_2/id = 2
+popup/item_3/text = "Dijkstra"
+popup/item_3/id = 3
+popup/item_4/text = "AStar"
+popup/item_4/id = 4
+
+[node name="OptionButton2" type="OptionButton" parent="GridContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 15
+allow_reselect = true
+popup/item_0/text = "Map 01"
+popup/item_0/id = 0
+popup/item_1/text = "Map 02"
+popup/item_1/id = 1
+popup/item_2/text = "Map 03"
+popup/item_2/id = 2
+popup/item_3/text = "Map 04"
+popup/item_3/id = 3
+popup/item_4/text = "Map 05"
+popup/item_4/id = 4
+popup/item_5/text = "Map 06"
+popup/item_5/id = 5
+popup/item_6/text = "Map 07"
+popup/item_6/id = 6
+popup/item_7/text = "Map 08"
+popup/item_7/id = 7
+popup/item_8/text = "Map 09"
+popup/item_8/id = 8
+popup/item_9/text = "Map 10"
+popup/item_9/id = 9
+popup/item_10/text = "Map 11"
+popup/item_10/id = 10
+popup/item_11/text = "Map 12"
+popup/item_11/id = 11
+popup/item_12/text = "Map 13"
+popup/item_12/id = 12
+popup/item_13/text = "Map 14"
+popup/item_13/id = 13
+popup/item_14/text = "Map 15"
+popup/item_14/id = 14
+
+[node name="OptionButton3" type="OptionButton" parent="GridContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 5
+selected = 0
+popup/item_0/text = "0 Second Delay"
+popup/item_0/id = 0
+popup/item_1/text = "0.05 Second Delay"
+popup/item_1/id = 1
+popup/item_2/text = "0.5 Second Delay"
+popup/item_2/id = 2
+popup/item_3/text = "1 Second Delay"
+popup/item_3/id = 3
+popup/item_4/text = "3 Second Delay"
+popup/item_4/id = 4
+
+[node name="Button2" type="Button" parent="GridContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Result Log"
+
+[node name="Button" type="Button" parent="GridContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Reset"
+
+[node name="Legends" type="VBoxContainer" parent="GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="GridContainer/HBoxContainer/Legends"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer2"]
+layout_mode = 2
+text = "Legends"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="GridContainer/HBoxContainer/Legends"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="Open Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Open Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Open Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Open Node"
+
+[node name="Blocked Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Blocked Node"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Blocked Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Blocked Node"
+
+[node name="Mild Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Mild Node"]
+modulate = Color(0.6, 0.8, 0.2, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Mild Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mild Terrain"
+
+[node name="Harsh Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Harsh Node"]
+modulate = Color(1, 0.65, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Harsh Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Harsh Terrain"
+
+[node name="Jarring Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Jarring Node"]
+modulate = Color(0.65, 0.16, 0.16, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Jarring Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Jarring Terrain"
+
+[node name="Start Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Start Node"]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Start Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Start Node"
+
+[node name="End Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/End Node"]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/End Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "End Node"
+
+[node name="Frontier Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Frontier Node"]
+modulate = Color(1, 0, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Frontier Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Frontier Node
+"
+
+[node name="Reached Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Reached Node"]
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Reached Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Reached Node"
+
+[node name="Path Node" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Path Node"]
+modulate = Color(0, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_5jm1u")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Path Node"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Path Node"
+
+[node name="Parrent" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Parrent"]
+modulate = Color(0.41, 0.41, 0.41, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_ewhv5")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Parrent"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Point to Parrent"
+
+[node name="Parrent Path" type="HBoxContainer" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Parrent Path"]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_ewhv5")
+
+[node name="Label" type="Label" parent="GridContainer/HBoxContainer/Legends/PanelContainer/ScrollContainer/VBoxContainer/Parrent Path"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Point to Parrent Finish Path"
+
+[node name="TutorialButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -64.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 61.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 32
+text = "?"
+script = ExtResource("5_doavq")
+
+[connection signal="item_selected" from="GridContainer/HBoxContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="item_selected" from="GridContainer/HBoxContainer/VBoxContainer/OptionButton2" to="." method="_on_option_button_2_item_selected"]
+[connection signal="item_selected" from="GridContainer/HBoxContainer/VBoxContainer/OptionButton3" to="." method="_on_option_button_3_item_selected"]
+[connection signal="pressed" from="GridContainer/HBoxContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="GridContainer/HBoxContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TutorialButton" to="." method="_on_tutorial_button_pressed"]

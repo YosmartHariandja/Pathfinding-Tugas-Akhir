@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwu23voum3b1x"]
+
+[ext_resource type="Script" path="res://Scripts/game.gd" id="1_gyoy1"]
+[ext_resource type="PackedScene" uid="uid://degrgpmtyx7ty" path="res://Scenes/main.tscn" id="1_m7gql"]
+
+[node name="Game" type="Node"]
+script = ExtResource("1_gyoy1")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="GridContainer/SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(574, 648)
+render_target_update_mode = 4
+
+[node name="Main" parent="GridContainer/SubViewportContainer/SubViewport" instance=ExtResource("1_m7gql")]
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="GridContainer/SubViewportContainer2"]
+handle_input_locally = false
+size = Vector2i(574, 648)
+render_target_update_mode = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/SubViewportContainer2/SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="OptionButton" type="OptionButton" parent="GridContainer/SubViewportContainer2/SubViewport/VBoxContainer"]
+layout_mode = 2
+item_count = 5
+selected = 0
+popup/item_0/text = "BFS"
+popup/item_0/id = 0
+popup/item_1/text = "DFS"
+popup/item_1/id = 1
+popup/item_2/text = "GreedyBFS"
+popup/item_2/id = 2
+popup/item_3/text = "Dijkstra"
+popup/item_3/id = 3
+popup/item_4/text = "AStar"
+popup/item_4/id = 4
+
+[node name="Button" type="Button" parent="GridContainer/SubViewportContainer2/SubViewport/VBoxContainer"]
+layout_mode = 2
+text = "Reset"
+
+[connection signal="item_selected" from="GridContainer/SubViewportContainer2/SubViewport/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="GridContainer/SubViewportContainer2/SubViewport/VBoxContainer/Button" to="." method="_on_button_pressed"]

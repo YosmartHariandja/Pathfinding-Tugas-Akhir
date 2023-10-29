@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://degrgpmtyx7ty"]
+
+[ext_resource type="Script" path="res://Scripts/Controller.gd" id="1_ph1ov"]
+[ext_resource type="Script" path="res://Scripts/MapNodes.gd" id="3_0pdj1"]
+[ext_resource type="Script" path="res://Scripts/PathfindNodes.gd" id="4_oouls"]
+[ext_resource type="Script" path="res://Scripts/GraphNodes.gd" id="5_hhnyx"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("graphNodes", "camera", "mapNodes", "pathfindNodes")]
+script = ExtResource("1_ph1ov")
+graphNodes = NodePath("GraphNodes")
+camera = NodePath("Camera2D")
+mapNodes = NodePath("MapNodes")
+pathfindNodes = NodePath("PathfindNodes")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="GraphNodes" type="Node2D" parent="."]
+script = ExtResource("5_hhnyx")
+
+[node name="MapNodes" type="Node2D" parent="."]
+script = ExtResource("3_0pdj1")
+width = 10
+height = 5
+textPath = "res://Resources/Map/Map15.txt"
+
+[node name="PathfindNodes" type="Node2D" parent="."]
+script = ExtResource("4_oouls")
+timeStep = 0.0

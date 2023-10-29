@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqmy4rwoycokn"]
+
+[ext_resource type="Script" path="res://Scripts/PathNode.gd" id="1_gtvjk"]
+[ext_resource type="Texture2D" uid="uid://dcwua732702ur" path="res://Assets/hexagon-128.png" id="2_j1osn"]
+[ext_resource type="Texture2D" uid="uid://c4rqlaoyfe2g8" path="res://Assets/icons8-arrow-50.png" id="3_d4spf"]
+
+[node name="PathNode" type="Node2D" node_paths=PackedStringArray("tile", "arrow")]
+position = Vector2(378, 250)
+script = ExtResource("1_gtvjk")
+tile = NodePath("Tile")
+arrow = NodePath("Arrow")
+
+[node name="Tile" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_j1osn")
+
+[node name="Arrow" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.819608, 0.882353, 0.705882, 1)
+z_index = 100
+rotation = 1.0472
+texture = ExtResource("3_d4spf")
+offset = Vector2(64, 0)
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -39.0
+offset_right = 39.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
