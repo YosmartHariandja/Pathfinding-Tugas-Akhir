@@ -83,7 +83,8 @@ func SearchRoutine() -> void:
 	log += " |	 Path Length = " + str(endNode.distance);
 	log += " |	 Node Traveled = " + str(finishNodes.size()) ;
 	log += " |	 Node Expanded = " + str(expanded_nodes);
-	var data:Array = [Algo.keys()[algoMode], time_end, timeStep, endNode.distance, finishNodes.size(), expanded_nodes]
+	var data:Array = [Algo.keys()[algoMode], time_end, timeStep,
+	endNode.distance, finishNodes.size(), expanded_nodes]
 	self.get_tree().root.get_node("Game").emit_signal("result_log_signal", log, data);
 
 # Uninformed

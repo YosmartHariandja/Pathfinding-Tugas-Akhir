@@ -76,7 +76,12 @@ func ShowArrowNodes(_nodes:Array[PathNode], _color:Color) -> void:
 		node.ColorArrow(_color);
 		node.PointArrow();
 
-func ColoringNodes(_color: Color, _nodes:Array[PathNode], _lerp:bool = false, _value:float = 0.5) -> void:
+func ColorToGrayscale(_color:Color) -> Color:
+	var average = (_color.r + _color.g + _color.b) / 3.0;
+	return Color(average, average, average, _color.a)
+
+func ColoringNodes(_color: Color, _nodes:Array[PathNode], _lerp:bool = false,
+_value:float = 0.5) -> void:
 	for node in _nodes:
 		var new_color:Color = _color;
 		if(_lerp):

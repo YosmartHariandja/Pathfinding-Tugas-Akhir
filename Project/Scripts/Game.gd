@@ -32,6 +32,7 @@ func Reset() -> void:
 	viewport.add_child(mainSceneInstance);
 
 func _on_button_pressed() -> void:
+	resultLog = [];
 	Reset();
 	mapOption.select(-1);
 

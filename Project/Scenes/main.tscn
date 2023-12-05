@@ -22,6 +22,8 @@ script = ExtResource("3_0pdj1")
 width = 10
 height = 5
 textPath = "res://Resources/Map/Map15.txt"
+harshColor = Color(0.435294, 0.580392, 0.141176, 1)
+jarringColor = Color(0.239216, 0.32549, 0.0666667, 1)
 
 [node name="PathfindNodes" type="Node2D" parent="."]
 script = ExtResource("4_oouls")

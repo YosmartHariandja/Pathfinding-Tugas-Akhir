@@ -137,6 +137,5 @@ func ColorTile(_color:Color) -> void:
 func ToggleVisibility(_node:CanvasItem, _show:bool) -> void:
 	_node.visible = _show;
 
-
 func _on_button_pressed() -> void:
 	self.get_parent().get_parent().emit_signal("grandchild_signal", self);
